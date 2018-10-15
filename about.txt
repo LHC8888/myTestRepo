@@ -1,0 +1,9 @@
+目录中的 .git 是Git的版本库
+.git
+  |----stage(index)暂存区
+  |----master当前分支
+  |----HEAD指向master的指针
+
+git add 是把文件添加到Git的暂存区中
+git commit 是把暂存区的文件提交到当前分支中
+commit之后暂存区就没有内容了
