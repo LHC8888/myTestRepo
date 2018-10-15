@@ -7,3 +7,6 @@
 git add 是把文件添加到Git的暂存区中
 git commit 是把暂存区的文件提交到当前分支中
 commit之后暂存区就没有内容了
+
+使用 git checkout -- filename 可以让文件回到最近一次git add 或者git commit的状态
+使用 git reset HEAD filename 可以把暂存区的修改回退到工作区
