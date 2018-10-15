@@ -1,0 +1,10 @@
+远程仓库
+每个人从远程仓库中克隆一份代码到自己的电脑上，然后把各自的提交又推送到远程仓库上，也可以从远程仓库中拉取别人的提交
+由于本地Git仓库和GitHub远程仓库之间的传输是通过SSH加密的，所以，需要一些设置
+1.创建SSH key
+1.1在用户主目录下，查看是否有.ssh目录，如果有，则在.ssh目录中查找是否有id_rsa和id_rsa.pub这两个文件。如果有则进入下一步。
+1.2如果没有，在用户主目录下，打开Git Bash，创建SSH key
+2.在GitHub上添加SSH key
+3.创建远程仓库
+4.在本地仓库目录下，使用 git remote add origin HttpsURL/SSHURL master 即把本地仓库master与URL指向的远程仓库origin关联起来
+5.使用git push -u origin master 把master分支推送到远程仓库origin上
