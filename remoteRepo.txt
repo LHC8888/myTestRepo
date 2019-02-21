@@ -7,4 +7,4 @@
 2.在GitHub上添加SSH key
 3.创建远程仓库
 4.在本地仓库目录下，使用 git remote add origin HttpsURL/SSHURL master 即把本地仓库master与URL指向的远程仓库origin关联起来
-5.使用git push -u origin master 把master分支推送到远程仓库origin上
+5.第一次使用git push -u origin master 把master分支推送到远程仓库origin上，之后可以省略-u
