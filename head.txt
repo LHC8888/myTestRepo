@@ -1,0 +1,5 @@
+git命令中常用到head
+
+head是一个指针，指向本地的版本库，git命令中能使用head的位置都能替换为使用远程库
+
+git命令也常用到origin/master，其中origin代表仓库的地址，master则是分支，在当前项目的.git/config文件中可以查看

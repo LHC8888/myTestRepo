@@ -1,0 +1,19 @@
+两者都能实现相同的功能，比如还原本地文件
+reset：更强调撤销------撤销暂存区（stage/index），撤销暂存区和本地
+checkout：更强调替换------用暂存区（stage/index）替换本地，用head指向目录替换暂存区和本地
+
+reset：
+1、git reset head -- filename（多个文件使用.）
+撤销上次暂存（取消暂存区的内容，用HEAD指向的版本替换暂存区）
+2、git rm --cached -r filename
+删除暂存区，保留工作区
+3、git reset --hard head
+撤销本地和暂存区的所有变动（本地工作区和暂存区退回到HEAD指向的版本）
+4、git reset --hard origin/master
+用远程仓库的origin/master替换本地、暂存区、版本库
+
+checkout：
+1、git checkout [--] filename
+用暂存区的内容替换工作区的内容
+2、git checkout head filename
+用HEAD指向的版本替换暂存区和工作区
